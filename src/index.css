@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --color-primary: #4caf50;
+    /* Green */
+    --color-secondary: #000000;
+    /* Black */
+    --color-dark: #1a1a1a;
+    /* Darker Black */
+    --color-gray: #f5f5f5;
+    /* Light Gray */
+    --font-primary: "Helvetica Neue", sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+}
+
+.bg-gray {
+    background-color: var(--color-gray);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+input,
+textarea {
+    background-color: var(--color-gray);
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darken(var(--color-primary), 10%);
+}
