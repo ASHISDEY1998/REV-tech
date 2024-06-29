@@ -25,12 +25,11 @@
     color: #ffffff;
     text-decoration: none;
     position: relative;
-    /* This is necessary for positioning the ::after pseudo-element */
+    padding: 0px 10px;
 }
 
 .navLinkActive {
     color: var(--color-primary);
-    /* Green color for active link */
     text-decoration: underline;
 }
 
@@ -41,10 +40,8 @@
     left: 0;
     width: 0;
     height: 2px;
-    /* Adjust the height to your desired border thickness */
     background-color: var(--color-primary);
     transition: width 0.3s ease-in-out;
-    /* Adjust the duration and timing function as needed */
 }
 
 .navLink:hover::after {
@@ -54,7 +51,6 @@
 .navLink:hover {
     color: var(--color-primary);
 }
-
 
 /* Hamburger menu styles */
 
@@ -70,7 +66,6 @@
     background-color: var(--color-white);
     margin: 4px 0;
 }
-
 
 /* Mobile menu styles */
 
@@ -92,6 +87,11 @@
         flex-direction: column;
         width: 100%;
         z-index: 999;
+        background-color: var(--color-secondary-light);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
     }
     .menu.active {
         display: flex;
